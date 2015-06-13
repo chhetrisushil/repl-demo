@@ -9,6 +9,7 @@
   "author": "chhetrisushil",
   "license": "MIT",
   "bin": {
-    "mood": "repl-test.js"
+    "mood": "repl-test.js",
+    "sentiment": "bot.js"
   }
 }
