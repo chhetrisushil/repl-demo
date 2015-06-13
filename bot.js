@@ -10,7 +10,7 @@ rl.on('line', function (line) {
 
   console.log('Sushil: ypo');
 
-  rl.setPrompt('Test: ', 'Something');
+  rl.setPrompt('Test: ');
   rl.prompt();
 });
 
@@ -21,4 +21,4 @@ rl.on('close', function () {
 });
 
 console.log('Welcome');
-rl.setPrompt('Test: ', 'GO');
+rl.setPrompt('Test: ');
