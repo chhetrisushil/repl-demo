@@ -2,6 +2,7 @@
 var readline = require('readline');
 
 var rl = readline.createInterface(process.stdin, process.stdout);
+var user = '';
 
 rl.on('line', function (line) {
   if (line.trim() === 'exit') {
@@ -10,7 +11,7 @@ rl.on('line', function (line) {
 
   console.log('Sushil: ypo');
 
-  rl.setPrompt('Test: ');
+  rl.setPrompt(user+': ');
   rl.prompt();
 });
 
@@ -21,4 +22,14 @@ rl.on('close', function () {
 });
 
 console.log('Welcome');
-rl.setPrompt('Test: ');
+rl.question('What\'s your name?', function (answer) {
+  if (answer) {
+    console.log('Hi %s', answer);
+    user = answer;
+  } else {
+    user = 'Test';
+  }
+
+  rl.setPrompt(user+': ');
+  rl.prompt();
+});
