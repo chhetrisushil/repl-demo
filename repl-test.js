@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 var repl = require('repl');
 
-repl.start('sushil> ');
+var con = repl.start('sushil> ');
