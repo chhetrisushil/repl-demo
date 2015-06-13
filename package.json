@@ -1,0 +1,14 @@
+{
+  "name": "repl-demo",
+  "version": "1.0.0",
+  "description": "Demo for how to build an custome repl",
+  "main": "repl-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chhetrisushil",
+  "license": "MIT",
+  "bin": {
+    "mood": "repl-test.js"
+  }
+}
